@@ -1,0 +1,34 @@
+import { Routes } from '@angular/router';
+import { HomePageComponent } from './pages/home-page.component';
+import { ExplorePageComponent } from './pages/explore-page.component';
+import { EventDetailPageComponent } from './pages/event-detail-page.component';
+import { GroupsPageComponent } from './pages/groups-page.component';
+import { GroupDetailPageComponent } from './pages/group-detail-page.component';
+import { CheckoutPageComponent } from './pages/checkout-page.component';
+import { MemberDashboardPageComponent } from './pages/member-dashboard-page.component';
+import { OrganizerDashboardPageComponent } from './pages/organizer-dashboard-page.component';
+import { AdminDashboardPageComponent } from './pages/admin-dashboard-page.component';
+import { ProfilePageComponent } from './pages/profile-page.component';
+import { PlansPageComponent } from './pages/plans-page.component';
+import { MessagesPageComponent } from './pages/messages-page.component';
+import { NotificationsPageComponent } from './pages/notifications-page.component';
+import { LoginPageComponent } from './pages/login-page.component';
+import { RegisterPageComponent } from './pages/register-page.component';
+
+export const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: 'explorar', component: ExplorePageComponent },
+  { path: 'eventos/:slug', component: EventDetailPageComponent },
+  { path: 'grupos', component: GroupsPageComponent },
+  { path: 'grupos/:slug', component: GroupDetailPageComponent },
+  { path: 'checkout', component: CheckoutPageComponent },
+  { path: 'dashboard', component: MemberDashboardPageComponent },
+  { path: 'organizador', component: OrganizerDashboardPageComponent },
+  { path: 'admin', component: AdminDashboardPageComponent },
+  { path: 'perfil', component: ProfilePageComponent },
+  { path: 'planos', component: PlansPageComponent },
+  { path: 'mensagens', component: MessagesPageComponent },
+  { path: 'notificacoes', component: NotificationsPageComponent },
+  { path: 'login', component: LoginPageComponent },
+  { path: 'registo', component: RegisterPageComponent }
+];
